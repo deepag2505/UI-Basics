@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Course Feedback Form</title>
+<body bgcolor="Hotpink">
+<center><h2>Course Feedback Form</h2></center>
+<form>
+<table align="center">
+<tr>
+<td>First Name<td><input type="text" name="fname" pattern="[A-Za-z]+" title="only accept char" required></td></tr>
+<tr><td>
+Last Name<td><input type="text" name="lname" pattern="[A-Za-z]+" title="only accept char" required></td></tr>
+<tr><td>
+Gender<td><input type="radio" name="gender" required>Male
+<input type="radio" name="gender" required>Female </td></tr>
+<tr><td>
+E-mail<td><input type="email" name="email" required></td></tr>
+<tr><td>
+Phone number<td><input type="tel" name="phone" pattern="[6789][0-9]{9}" title="accepts only 10 digit and first number start with 6 or 7 or 8 or 9" required></td></tr>
+<tr><td>
+Course<td><select required>
+<option value="" selected disabled>selected a course</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>Java Script</option>
+<option>Angular Js</option> 
+</select></td></tr>
+<tr><td>
+Feedback Message<td>
+<textarea rows="10" cols="30" required>
+</textarea><br><br>
+<button>Submit</button>
+</td></tr>
+</form>
+</body>
+</html>
